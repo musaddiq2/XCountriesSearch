@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 
 const CountryCard = ({ name, flags }) => (
   <div className="card">
-    <img src={flags.png} alt={`Flag of ${name}`} />
+    <img src={flags.png} alt={`Flag of ${name.common}`} />
     <h2>{name.common}</h2>
     <p>{name.official}</p>
   </div>
@@ -18,7 +18,7 @@ const App = () => {
     setSearchTerm(event.target.value);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     axios
       .get("https://restcountries.com/v3.1/all")
       .then((response) => {
