@@ -3,7 +3,7 @@ import axios from "axios";
 import "./App.css";
 
 const CountryCard = ({ name, flags }) => (
-  <div className="card">
+  <div className="countryCard">
     <img src={flags.png} alt={`Flag of ${name.common}`} />
     <h2>{name.common}</h2>
     <p>{name.official}</p>

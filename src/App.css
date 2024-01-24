@@ -43,7 +43,7 @@ input[type="text"] {
   width: 100%; /* Adjust as needed */
 }
 
-.card {
+.countryCard {
   display: flex;
   flex-direction: column;
   align-items: center;
