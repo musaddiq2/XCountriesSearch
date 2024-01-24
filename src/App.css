@@ -56,17 +56,17 @@ input[type="text"] {
   width: calc(33.333% - 20px); /* Adjust as needed */
 }
 
-.card img {
+.countryCard img {
   border-radius: 4px;
   height: 100px;
   margin-bottom: 10px;
   width: 100%;
 }
 
-.card h2 {
+.countryCard h2 {
   margin: 0 0 10px;
 }
 
-.card p {
+.countryCard p {
   margin: 0;
 }
